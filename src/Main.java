@@ -9,16 +9,8 @@ public class Main {
 
         readDataTest(DataGrabber.stateIndustryGrabber(rows, "GA", " Electrical contractors "));
 
-        List<String[]> filteredRows = new ArrayList<>();
-        for (String[] row : rows) {
-            if (row[2].equals("GA") && row[3].equals(" Electrical contractors ")) {
-                filteredRows.add(row);
-            }
-        }
-        readDataTest(filteredRows);
-        int[] array = DataGrabber.InjuryGrabber(filteredRows);
+        int[] array = DataGrabber.InjuryGrabber(DataGrabber.stateIndustryGrabber(rows, "GA", " Electrical contractors "));
         printIntArray(array);
-
 
         Scanner scanner = new Scanner(System.in);
         String state;
