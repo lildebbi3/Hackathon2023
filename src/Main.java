@@ -6,49 +6,39 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws Exception {
 
-
+        // Data grabber demonstration
         DataGrabber.createResults("GA", " Electrical contractors ").print();
+        List<String[]> rows = CsvReader.readCsv();
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         String state;
         String industry;
-        //exit will be true until computation/searching functions are completed
-        boolean exit = true;
+        String userInput = "";
 
-        while (!exit) {
-            System.out.println("Please choose an option:");
-            System.out.println("1. Enter state");
-            System.out.println("2. Enter industry");
-            System.out.println("3. Search");
-            System.out.println("4. Exit program");
+        do {
+            System.out.println("\nEnter the state: ");
+            state = sc.nextLine();
 
-            int choice = scanner.nextInt();
-            scanner.nextLine(); // consume the newline character
+            System.out.println("Enter the industry: ");
+            industry = sc.nextLine();
 
-            switch (choice) {
-                case 1 -> {
-                    System.out.print("Enter state (Ex: GA, NC): ");
-                    state = scanner.nextLine();
-                    System.out.println("You entered: " + state);
-                }
-                case 2 -> {
-                    System.out.print("Enter industry (Ex: Construction, healthcare): ");
-                    industry = scanner.nextLine();
-                    System.out.println("You entered: " + industry);
-                }
-                case 3 -> System.out.println("Executing search...");
+            System.out.println("\nSearching...");
 
-                // execute the search based on the user's state and industry inputs
-                // TODO: implement search logic here
-                case 4 -> {
-                    System.out.println("Exiting program...");
-                    exit = true;
-                }
-                default -> System.out.println("Invalid choice. Please try again.");
-            }
-        }
+            System.out.println("\n[NOT DISPLAYED TO USER]");
+            readDataTest(DataGrabber.stateIndustryGrabber(rows, state, industry));
 
-        scanner.close();
+            int[] injuryArray = DataGrabber.InjuryGrabber(DataGrabber.stateIndustryGrabber(rows, state, industry));
+
+            System.out.println("\n[THIS IS DISPLAYED TO USER]");
+            System.out.println("The following cases have occurred to people working in [" + industry + "] in the state of [" + state + "]: ");
+            printIntArray(injuryArray);
+
+            System.out.println("\nWould you like to search again? (Y/N)");
+            userInput = sc.nextLine().toLowerCase();
+        } while (!userInput.equals("n")&&!userInput.equals("no"));
+        System.out.println();
+
+        System.out.println("[Search Ended]");
     }
 
     //Method to that tests out the CsvReader.readCsv class/method that obtains the data and prints
