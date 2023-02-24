@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb3c0a9a-7f1e-4ab5-b9bf-9655de527faf" name="Changes" comment="Added Data.csv and Data_Dictionary.pdf to a Data folder">
-      <change afterPath="$PROJECT_DIR$/src/Results.java" afterDir="false" />
+    <list default="true" id="eb3c0a9a-7f1e-4ab5-b9bf-9655de527faf" name="Changes" comment="Result class created, it holds the state, industry, and an int[] injuries. with corresponding methods.">
+      <change afterPath="$PROJECT_DIR$/src/CsvReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677252026918</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Result class created, it holds the state, industry, and an int[] injuries. with corresponding methods.">
+      <created>1677253112286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677253112286</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +102,7 @@
     <MESSAGE value="wip" />
     <MESSAGE value="update" />
     <MESSAGE value="Added Data.csv and Data_Dictionary.pdf to a Data folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Data.csv and Data_Dictionary.pdf to a Data folder" />
+    <MESSAGE value="Result class created, it holds the state, industry, and an int[] injuries. with corresponding methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Result class created, it holds the state, industry, and an int[] injuries. with corresponding methods." />
   </component>
 </project>
