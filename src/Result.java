@@ -1,4 +1,7 @@
-public class Results {
+/*
+Class to store the Result
+ */
+public class Result {
     private String state;
     private String industry;
     private int[] injuries = new int[7];

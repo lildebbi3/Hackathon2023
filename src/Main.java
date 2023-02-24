@@ -6,7 +6,7 @@ public class Main {
     }
 
     //Method to that tests out the CsvReader.readCsv class/method that obtains the data and prints
-    //them out in the console.
+    //them out in the console. 1st loop goes through a 20 rows,2nd loop goes corresponding 28 columns
     public static void readDataTest(){
         List<String[]> rows = CsvReader.readCsv();
         for(int i=0;i<20;i++){
