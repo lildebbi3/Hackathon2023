@@ -10,7 +10,7 @@ public class Main {
             for(int e=0;e<28;e++){
                 System.out.print(arr[e]+" ");
             }
-            System.out.println();
+            System.out.println("push test");
         }
     }
 

@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb3c0a9a-7f1e-4ab5-b9bf-9655de527faf" name="Changes" comment="DataGrabber class created">
+    <list default="true" id="eb3c0a9a-7f1e-4ab5-b9bf-9655de527faf" name="Changes" comment="added documentation of work">
+      <change afterPath="$PROJECT_DIR$/src/DataGrabber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataGrabber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataGrabber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CsvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CsvReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
-    <list id="81276883-765d-41be-bedf-4b8fdadcce90" name="Changes by chris" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,14 +99,7 @@
       <option name="project" value="LOCAL" />
       <updated>1677254882542</updated>
     </task>
-    <task id="LOCAL-00007" summary="DataGrabber class created">
-      <created>1677257839683</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1677257839683</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -127,7 +120,6 @@
     <MESSAGE value="Result class created, it holds the state, industry, and an int[] injuries. with corresponding methods." />
     <MESSAGE value="Created a CsvReader class that grabs the data from the data.csv file and returns it as a List(String[]). Also tested it out in the Main.java file." />
     <MESSAGE value="added documentation of work" />
-    <MESSAGE value="DataGrabber class created" />
-    <option name="LAST_COMMIT_MESSAGE" value="DataGrabber class created" />
+    <option name="LAST_COMMIT_MESSAGE" value="added documentation of work" />
   </component>
 </project>
