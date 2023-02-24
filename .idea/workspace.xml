@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb3c0a9a-7f1e-4ab5-b9bf-9655de527faf" name="Changes" comment="Industry grabber is functional, readDataTest method is fixed so no more out of bound exceptions.">
+    <list default="true" id="00c609f8-1a04-4007-8ca8-c867f6c3b8d4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CsvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CsvReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,15 +30,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/Merrick/IdeaProjects/occupationalHazardFinder/Data"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Merrick/IdeaProjects/occupationalHazardFinder/Data&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Merrick\IdeaProjects\occupationalHazardFinder\Data" />
@@ -125,21 +127,7 @@
       <option name="project" value="LOCAL" />
       <updated>1677259931295</updated>
     </task>
-    <task id="LOCAL-00009" summary="DataGrabber.StateGrabber works correctly">
-      <created>1677260028120</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1677260028120</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Industry grabber is functional, readDataTest method is fixed so no more out of bound exceptions.">
-      <created>1677264369652</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1677264369652</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,7 +135,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="upstream/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -162,7 +162,6 @@
     <MESSAGE value="added documentation of work" />
     <MESSAGE value="DataGrabber class created" />
     <MESSAGE value="DataGrabber.StateGrabber works correctly" />
-    <MESSAGE value="Industry grabber is functional, readDataTest method is fixed so no more out of bound exceptions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Industry grabber is functional, readDataTest method is fixed so no more out of bound exceptions." />
+    <option name="LAST_COMMIT_MESSAGE" value="DataGrabber.StateGrabber works correctly" />
   </component>
 </project>
