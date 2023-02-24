@@ -2,7 +2,16 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args){
-        readDataTest();
+       // readDataTest();
+        List<String[]> rows = CsvReader.readCsv();
+        rows = DataGrabber.StateGrabber(rows, "GA");
+        for(int i=0;i<20;i++){
+            String[] arr = rows.get(i);
+            for(int e=0;e<28;e++){
+                System.out.print(arr[e]+" ");
+            }
+            System.out.println();
+        }
     }
 
     //Method to that tests out the CsvReader.readCsv class/method that obtains the data and prints
