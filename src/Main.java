@@ -1,20 +1,16 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
-        // readDataTest();
-        List<String[]> rows = CsvReader.readCsv();
-        List<String[]> filteredRows = new ArrayList<>();
-        for (String[] row : rows) {
-            if (row[2].equals("GA") && row[3].equals(" Electrical contractors ")) {
-                filteredRows.add(row);
-            }
-        }
-        readDataTest(filteredRows);
-        int[] array = DataGrabber.InjuryGrabber(filteredRows);
-        printIntArray(array);
 
+        List<String[]> rows = CsvReader.readCsv();
+
+        readDataTest(DataGrabber.stateIndustryGrabber(rows, "GA", " Electrical contractors "));
+
+        int[] array = DataGrabber.InjuryGrabber(DataGrabber.stateIndustryGrabber(rows, "GA", " Electrical contractors "));
+        printIntArray(array);
 
         Scanner scanner = new Scanner(System.in);
         String state;
@@ -57,6 +53,7 @@ public class Main {
 
         scanner.close();
     }
+
     //Method to that tests out the CsvReader.readCsv class/method that obtains the data and prints
     //them out in the console. 1st loop goes through 20 rows,2nd loop through corresponding row's 28 columns
     public static void readDataTest(List<String[]> rows) {
@@ -69,6 +66,7 @@ public class Main {
             System.out.println();
         }
     }
+
     public static void printIntArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
