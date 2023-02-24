@@ -9,7 +9,7 @@ String elements that store the column values.
  */
 public class CsvReader {
     public static List<String[]> readCsv() {
-        //folder/file/file type
+        //folder/file.file type
         String fileName = "Data/Data.csv";
         List<String[]> rows = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(fileName))) {
@@ -24,4 +24,6 @@ public class CsvReader {
         }
         return rows;
     }
+
+
 }

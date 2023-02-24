@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb3c0a9a-7f1e-4ab5-b9bf-9655de527faf" name="Changes" comment="Created a CsvReader class that grabs the data from the data.csv file and returns it as a List(String[]). Also tested it out in the Main.java file.">
+    <list default="true" id="eb3c0a9a-7f1e-4ab5-b9bf-9655de527faf" name="Changes" comment="added documentation of work">
+      <change afterPath="$PROJECT_DIR$/src/DataGrabber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CsvReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CsvReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Results.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677254196539</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added documentation of work">
+      <created>1677254882542</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677254882542</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +119,7 @@
     <MESSAGE value="Added Data.csv and Data_Dictionary.pdf to a Data folder" />
     <MESSAGE value="Result class created, it holds the state, industry, and an int[] injuries. with corresponding methods." />
     <MESSAGE value="Created a CsvReader class that grabs the data from the data.csv file and returns it as a List(String[]). Also tested it out in the Main.java file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created a CsvReader class that grabs the data from the data.csv file and returns it as a List(String[]). Also tested it out in the Main.java file." />
+    <MESSAGE value="added documentation of work" />
+    <option name="LAST_COMMIT_MESSAGE" value="added documentation of work" />
   </component>
 </project>
