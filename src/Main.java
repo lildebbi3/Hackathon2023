@@ -6,6 +6,7 @@ public class Main {
         List<String[]> rows = CsvReader.readCsv();
         rows = DataGrabber.StateGrabber(rows, "GA");
         readDataTest(rows);
+        System.out.println("Testing pull");
     }
 
     //Method to that tests out the CsvReader.readCsv class/method that obtains the data and prints
