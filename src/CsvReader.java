@@ -16,7 +16,7 @@ public class CsvReader {
             String line;
             //splits the line based off of the ',' and stores it in the String[]
             while ((line = br.readLine()) != null) {
-                String[] row = line.split(",");
+                String[] row = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
                 rows.add(row);
             }
         } catch (IOException e) {

@@ -25,7 +25,7 @@ public class DataGrabber {
         for(int i=0;i<rowsSize;i++){
             String[] arr = rows.get(i);
             //compares if row is the users requested industry, if true adds it to industryData,
-            if(arr[9]==industry){
+            if(Objects.equals(arr[9], industry)){
                 industryData.add(rows.get(i));
             }
         }
