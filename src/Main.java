@@ -1,16 +1,13 @@
+import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
 
-        List<String[]> rows = CsvReader.readCsv();
 
-        readDataTest(DataGrabber.stateIndustryGrabber(rows, "GA", " Electrical contractors "));
-
-        int[] array = DataGrabber.InjuryGrabber(DataGrabber.stateIndustryGrabber(rows, "GA", " Electrical contractors "));
-        printIntArray(array);
+        DataGrabber.createResults("GA", " Electrical contractors ").print();
 
         Scanner scanner = new Scanner(System.in);
         String state;
