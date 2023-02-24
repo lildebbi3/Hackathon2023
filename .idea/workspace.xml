@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00c609f8-1a04-4007-8ca8-c867f6c3b8d4" name="Changes" comment="">
+    <list default="true" id="eb3c0a9a-7f1e-4ab5-b9bf-9655de527faf" name="Changes" comment="Industry grabber is functional, readDataTest method is fixed so no more out of bound exceptions.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataGrabber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataGrabber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Result.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,6 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Merrick/IdeaProjects/occupationalHazardFinder/Data&quot;
   }
@@ -47,20 +46,6 @@
       <recent name="C:\Users\Merrick\IdeaProjects\occupationalHazardFinder\Data" />
       <recent name="C:\Users\Merrick\IdeaProjects\occupationalHazardFinder" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="occupationalHazardFinder" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,69 +77,20 @@
       <option name="project" value="LOCAL" />
       <updated>1677252026918</updated>
     </task>
-    <task id="LOCAL-00004" summary="Result class created, it holds the state, industry, and an int[] injuries. with corresponding methods.">
-      <created>1677253112286</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1677253112286</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Created a CsvReader class that grabs the data from the data.csv file and returns it as a List(String[]). Also tested it out in the Main.java file.">
-      <created>1677254196539</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1677254196539</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added documentation of work">
-      <created>1677254882542</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1677254882542</updated>
-    </task>
-    <task id="LOCAL-00007" summary="DataGrabber class created">
-      <created>1677257839683</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1677257839683</updated>
-    </task>
-    <task id="LOCAL-00008" summary="DataGrabber.StateGrabber works correctly">
-      <created>1677259931295</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1677259931295</updated>
-    </task>
-    <task id="LOCAL-00009" summary="DataGrabber.StateGrabber works correctly">
-      <created>1677265105162</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1677265105162</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="528aac80-0d15-486f-b3a1-278988c0822c">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="upstream/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -164,11 +100,6 @@
     <MESSAGE value="wip" />
     <MESSAGE value="update" />
     <MESSAGE value="Added Data.csv and Data_Dictionary.pdf to a Data folder" />
-    <MESSAGE value="Result class created, it holds the state, industry, and an int[] injuries. with corresponding methods." />
-    <MESSAGE value="Created a CsvReader class that grabs the data from the data.csv file and returns it as a List(String[]). Also tested it out in the Main.java file." />
-    <MESSAGE value="added documentation of work" />
-    <MESSAGE value="DataGrabber class created" />
-    <MESSAGE value="DataGrabber.StateGrabber works correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="DataGrabber.StateGrabber works correctly" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Data.csv and Data_Dictionary.pdf to a Data folder" />
   </component>
 </project>

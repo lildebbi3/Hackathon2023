@@ -31,4 +31,12 @@ public class DataGrabber {
 
         return  injuries;
     }
+
+    public static Result CreateResults(String state, String industry){
+        List<String[]> rows = CsvReader.readCsv();
+        List<String[]> filiteredRows = stateIndustryGrabber(rows, state, industry);
+        int[] injuries = InjuryGrabber(filiteredRows);
+        Result output = new Result(state, industry, injuries);
+        return output;
+    }
 }
