@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb3c0a9a-7f1e-4ab5-b9bf-9655de527faf" name="Changes" comment="test123">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Rebasing_at_2_23_23__9_33_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Rebasing_at_2_23_23__9_33_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="eb3c0a9a-7f1e-4ab5-b9bf-9655de527faf" name="Changes" comment="Added Data.csv and Data_Dictionary.pdf to a Data folder">
+      <change afterPath="$PROJECT_DIR$/src/Results.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,13 +33,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "17"
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Merrick/IdeaProjects/occupationalHazardFinder/Data"
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Merrick\IdeaProjects\occupationalHazardFinder" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Merrick\IdeaProjects\occupationalHazardFinder\Data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Merrick\IdeaProjects\occupationalHazardFinder\Data" />
+      <recent name="C:\Users\Merrick\IdeaProjects\occupationalHazardFinder" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -59,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677205024248</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Data.csv and Data_Dictionary.pdf to a Data folder">
+      <created>1677252026917</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677252026918</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -76,6 +93,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="wip" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="Added Data.csv and Data_Dictionary.pdf to a Data folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Data.csv and Data_Dictionary.pdf to a Data folder" />
   </component>
 </project>
