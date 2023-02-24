@@ -4,31 +4,17 @@ import java.util.Objects;
 
 // state array position is 6, industry position is 9
 public class DataGrabber {
-    //limits down the search with the requested State
-    public static List<String[]> StateGrabber(List<String[]> rows, String state){
-        List<String[]> stateData = new ArrayList<>();
-        int rowsSize = rows.size();
-        for(int i=0;i<rowsSize;i++){
-            String[] arr = rows.get(i);
-            //System.out.println(arr[7]);
-            //compares if row is the users requested state, if true adds it to stateData,
-            if(Objects.equals(arr[6], state)){
-                stateData.add(arr);
-            }
+
+    public static int[] InjuryGrabber(List<String[]> filtered){
+        int[] injuries = new int[6];
+        for (String[] arr : filtered) {
+            injuries[0] += Integer.parseInt(arr[12]);
+            injuries[1] += Integer.parseInt(arr[13]);
+            injuries[2] += Integer.parseInt(arr[14]);
+            injuries[3] += Integer.parseInt(arr[15]);
+            injuries[4] += Integer.parseInt(arr[16]);
+            injuries[5] += Integer.parseInt(arr[17]);
         }
-        return stateData;
-    }
-    //limts down the search with the requested Industry
-    public static List<String[]> IndustryGrabber(List<String[]> rows, String industry){
-        List<String[]> industryData = new ArrayList<>();
-        int rowsSize = rows.size();
-        for(int i=0;i<rowsSize;i++){
-            String[] arr = rows.get(i);
-            //compares if row is the users requested industry, if true adds it to industryData,
-            if(Objects.equals(arr[9], industry)){
-                industryData.add(rows.get(i));
-            }
-        }
-        return industryData;
+        return  injuries;
     }
 }

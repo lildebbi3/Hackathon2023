@@ -1,10 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
+        // readDataTest();
+        List<String[]> rows = CsvReader.readCsv();
+        List<String[]> filteredRows = new ArrayList<>();
+        for (String[] row : rows) {
+            if (row[2].equals("GA") && row[3].equals(" Electrical contractors ")) {
+                filteredRows.add(row);
+            }
+        }
+        readDataTest(filteredRows);
+        int[] array = DataGrabber.InjuryGrabber(filteredRows);
+        printIntArray(array);
+
+
         Scanner scanner = new Scanner(System.in);
         String state;
         String industry;
-        boolean exit = false;
+        //exit will be true until computation/searching functions are completed
+        boolean exit = true;
 
         while (!exit) {
             System.out.println("Please choose an option:");
@@ -40,5 +56,23 @@ public class Main {
         }
 
         scanner.close();
+    }
+    //Method to that tests out the CsvReader.readCsv class/method that obtains the data and prints
+    //them out in the console. 1st loop goes through 20 rows,2nd loop through corresponding row's 28 columns
+    public static void readDataTest(List<String[]> rows) {
+        int numRows = Math.min(rows.size(), 20);
+        for (int i = 0; i < numRows; i++) {
+            String[] arr = rows.get(i);
+            for (int e = 0; e < arr.length; e++) {
+                System.out.print(arr[e] + " ");
+            }
+            System.out.println();
+        }
+    }
+    public static void printIntArray(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
 }
