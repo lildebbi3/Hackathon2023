@@ -3,20 +3,10 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args){
-       // readDataTest();
+
         List<String[]> rows = CsvReader.readCsv();
-        rows = DataGrabber.StateGrabber(rows, "GA");
-        rows = DataGrabber.IndustryGrabber(rows, " Electrical contractors ");
 
-        List<String[]> filteredRows = new ArrayList<>();
-
-        for (String[] row : rows) {
-            if (row[6].equals("GA") && row[9].equals(" Electrical contractors ")) {
-                filteredRows.add(row);
-            }
-        }
-
-        readDataTest(filteredRows);
+        readDataTest(DataGrabber.stateIndustryGrabber(rows, "GA", " Electrical contractors "));
     }
 
     //Method to that tests out the CsvReader.readCsv class/method that obtains the data and prints
